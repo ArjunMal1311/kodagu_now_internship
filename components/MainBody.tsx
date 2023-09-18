@@ -1,13 +1,13 @@
 import React from 'react'
 import { FaArrowLeft, FaComments, FaShareSquare, FaSquare } from 'react-icons/fa'
-import {  FiMoreVertical } from 'react-icons/fi'
+import { FiMoreVertical } from 'react-icons/fi'
 import { IoMdContact } from 'react-icons/io'
 
 const MainBody = () => {
     return (
         <div className='my-10 bg-[#15132B] rounded-lg px-10 py-10 mx-8 text-white lg:justify-between lg:flex lg:flex-row flex-col'>
             <div className='lg:flex flex-col lg:flex-row'>
-                <div className='mx-4 mt-2 hidden sm:flex'>
+                <div className='mx-4 mt-2 hidden lg:flex'>
                     <FaArrowLeft />
                 </div>
 
@@ -34,16 +34,16 @@ const MainBody = () => {
                             </svg>
                         </div>
 
-                        <div className='flex lg:ml-32 ml-0 mr-4 items-center justify-center bg-[#6418C3] px-2 py-1 rounded-2xl lg:mb-0 mt-4 h-[40px]'>
+                        <div className='flex lg:ml-32 ml-0 py-2 mr-4 items-center hover:bg-[#0D0B21] justify-center bg-[#6418C3] px-2 py-1 rounded-2xl lg:mb-0 mt-4 h-[40px]'>
                             <IoMdContact size={32} />
-                            <h4 className='ml-2'>Invite People</h4>
+                            <h4 className='ml-2 select-none'>Invite People</h4>
                         </div>
 
 
-                        <h4 className='border flex items-center justify-center px-2 py-1 rounded-xl mr-4 lg:max-w-full lg:mb-0 mt-4 h-[40px] '>Private</h4>
-                        <h4 className='flex items-center px-4 py-1 justify-center rounded-xl mr-4 bg-[#7879F1] text-white lg:mb-0 lg:max-w-full  mt-4 h-[40px] '>Edit</h4>
+                        <h4 className='border flex items-center justify-center hover:bg-[#0D0B21] select-none px-2 py-1 rounded-xl mr-4 lg:max-w-full lg:mb-0 mt-4 h-[40px] '>Private</h4>
+                        <h4 className='flex items-center px-4 py-1 justify-center hover:bg-[#0D0B21] select-none rounded-xl mr-4 bg-[#7879F1] text-white lg:mb-0 lg:max-w-full  mt-4 h-[40px] '>Edit</h4>
 
-                        <div className='flex ml-0 mr-4 items-center justify-center border-2 lg:mb-0 mb-4 px-2 py-1 rounded-2xl mt-4 h-[40px]'>
+                        <div className='flex ml-0 mr-4 items-center justify-center hover:bg-[#0D0B21] select-none border-2 lg:mb-0 mb-4 px-2 py-1 rounded-2xl mt-4 h-[40px]'>
                             <FaComments />
                             <h4 className='ml-2'>Comments</h4>
                         </div>
@@ -68,8 +68,12 @@ const MainBody = () => {
                 </div>
 
                 <div className='flex items-center m-4'>
-                    <h4 className='mx-4 hidden sm:flex'>Total Progress 60%</h4>
-                    <div className='w-[258px] h-[14px] bg-purple-300 rounded-lg'>
+                    <h4 className='mx-4 hidden lg:flex select-none'>Total Progress 60%</h4>
+                    <div className='w-[258px] h-[14px] bg-[#1E1C3A] rounded-lg'>
+                        <div
+                            style={{ width: '60%', backgroundColor: '#6418C3' }}
+                            className='h-full rounded-lg'
+                        ></div>
                     </div>
                 </div>
             </div>

@@ -27,7 +27,9 @@ const LastBody = () => {
                                     {element.information}
                                 </div>
 
-                                <div className='w-full h-[6px] mt-4 bg-purple-300 rounded-lg mb-6'></div>
+                                <div className='w-full h-[6px] bg-[#1E1C3A] rounded-lg mb-6 mt-4'>
+                                    <div className={`h-full rounded-lg w-[60%] ${getBgColor(element.heading)}`}></div>
+                                </div>
 
                                 <div className='flex relative'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none" className="absolute">
@@ -78,6 +80,20 @@ const getHeadingColor = (mainHeading: string) => {
             return 'text-purple-500'
         default:
             return 'text-blue-500';
+    }
+};
+const getBgColor = (mainHeading: string) => {
+    switch (mainHeading) {
+        case 'Important':
+            return 'bg-yellow-500';
+        case 'Bugs Fixing':
+            return 'bg-red-500';
+        case 'Database':
+            return 'bg-green-500';
+        case 'Instructor Meeting':
+            return 'bg-purple-500'
+        default:
+            return 'bg-blue-500';
     }
 };
 

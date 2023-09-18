@@ -45,7 +45,7 @@ const TopBar = () => {
                 ))}
             </div>
 
-            <div className='lg:flex space-x-4 items-center bg-[#15132b] px-4 py-2 rounded-3xl hidden'>
+            <div className='lg:flex space-x-4 items-center bg-[#15132b] px-4 py-2 rounded-3xl hidden  hover:bg-[#0D0B21]'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                     <g clipPath="url(#clip0_3072_13)">
                         <path d="M14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28Z" fill="#F0F0F0" />
@@ -71,7 +71,7 @@ const TopBar = () => {
                 </div>
             </div>
 
-            <div className='lg:flex space-x-5 items-center hidden'>
+            <div className='lg:flex space-x-5 items-center hidden hover:bg-[#0D0B21] px-3 py-1 rounded-lg'>
                 <div>
                     <FaSquare size={32} />
                 </div>
