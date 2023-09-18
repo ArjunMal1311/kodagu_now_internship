@@ -9,12 +9,23 @@ const LastBody = () => {
                 informationArray.map((element: any) => (
                     <div className={`mx-8 my-4 lg:w-1/5`} key={element.mainHeading}>
                         <div className="flex justify-between items-center text-white">
-                            <h4 className="font-bold">{element.mainHeading}</h4>
-                            <FaPlus />
+                            <div className="flex space-x-1">
+                                <h4 className="font-bold">
+                                    {element.mainHeading}
+                                </h4>
+                                <p>({element.notification})</p>
+                            </div>
+
+                            <div className=" px-3 py-3 bg-[#211A75] hover:bg-[#6418C3] rounded-lg">
+                                <FaPlus />
+                            </div>
                         </div>
 
                         {element.bottomThings.map((element: any) => (
-                            <div className={`w-full h-[229px] bg-[#211A75] my-10 rounded-lg px-4 hover:bg-[#15132b] ${getHeadingColor(element.heading)}`} key={element.heading}>
+                            <div
+                                className={`w-full h-[229px] bg-[#211A75] my-10 rounded-lg px-4 ${getHeadingColor(element.heading)} transition-transform transform-gpu hover:translate-x-5 hover:translate-y-5`}
+                                key={element.heading}
+                            >
                                 <div className="flex justify-between items-center py-6">
                                     <div className="flex items-center space-x-2">
                                         <FaDotCircle />
