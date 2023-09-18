@@ -14,7 +14,7 @@ const LastBody = () => {
                         </div>
 
                         {element.bottomThings.map((element: any) => (
-                            <div className={`w-full h-[229px] bg-[#211A75] my-10 rounded-lg px-4 ${getHeadingColor(element.heading)}`}>
+                            <div className={`w-full h-[229px] bg-[#211A75] my-10 rounded-lg px-4 hover:bg-[#15132b] ${getHeadingColor(element.heading)}`}>
                                 <div className="flex justify-between items-center py-6">
                                     <div className="flex items-center space-x-2">
                                         <FaDotCircle />

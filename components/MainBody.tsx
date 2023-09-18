@@ -34,7 +34,7 @@ const MainBody = () => {
                             </svg>
                         </div>
 
-                        <div className='flex lg:ml-32 ml-0 py-2 mr-4 items-center hover:bg-[#0D0B21] justify-center bg-[#6418C3] px-2 py-1 rounded-2xl lg:mb-0 mt-4 h-[40px]'>
+                        <div className='flex lg:ml-32 ml-0 mr-4 items-center hover:bg-[#0D0B21] justify-center bg-[#6418C3] px-2 py-1 rounded-2xl lg:mb-0 mt-4 h-[40px]'>
                             <IoMdContact size={32} />
                             <h4 className='ml-2 select-none'>Invite People</h4>
                         </div>

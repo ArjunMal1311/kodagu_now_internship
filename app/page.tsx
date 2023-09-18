@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import LastBody from '@/components/LastBody'
 import MainBody from '@/components/MainBody'
 import SideNavBar from '@/components/SideNavBar'
@@ -12,6 +13,7 @@ export default function Home() {
         <TopBar />
         <MainBody />
         <LastBody />
+        <Footer/>
       </div>
     </main>
   )

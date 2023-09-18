@@ -13,12 +13,12 @@ const SideNavBar = () => {
     // 
     return (
         <div
-            className={`w-${isCollapsed ? '50' : '250'}px   bg-[#15132B] text-white fixed z-50 ${isCollapsed? "h-[10px]" : "h-screen"} mr-5`}
+            className={`w-${isCollapsed ? '50' : '250'}px   bg-[#15132B] text-white fixed z-50 ${isCollapsed? "h-0" : "h-screen"} mr-5`}
             style={{ width: isCollapsed ? '50px' : '250px' }}
         >
             <div className="my-6 flex justify-center items-center">
                 <p className={`mx-12 ${isCollapsed ? 'hidden' : ''}`}>weframetech</p>
-                <p className='text-[#7879F1] hover:cursor-pointer mt-1' onClick={toggleSidebar}>
+                <p className='text-[#7879F1] hover:cursor-pointer mt-1 ml-2' onClick={toggleSidebar}>
                     <FaBars size={24} />
                 </p>
             </div>
