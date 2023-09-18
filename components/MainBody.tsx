@@ -68,7 +68,7 @@ const MainBody = () => {
                 </div>
 
                 <div className='flex items-center m-4'>
-                    <h4 className='mx-4 hidden lg:flex select-none'>Total Progress 60%</h4>
+                    <h4 className='mx-4 hidden xl:flex select-none'>Total Progress 60%</h4>
                     <div className='w-[258px] h-[14px] bg-[#1E1C3A] rounded-lg'>
                         <div
                             style={{ width: '60%', backgroundColor: '#6418C3' }}
